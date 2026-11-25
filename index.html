@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planta baixa da empresa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nossa empresa</h1>
+    <p>Clique em um cômodo da planta para ver os detalhes.</p>
+  </header>
+
+  <main>
+    <!-- PLANTA: cada <a> é uma área clicável posicionada em % sobre a imagem -->
+    <section class="planta">
+      <img src="planta.png" alt="Planta baixa do escritório com recepção, escritório, sala de reuniões, copa e banheiro">
+      <a class="comodo recepcao"  href="#recepcao"  aria-label="Recepção"></a>
+      <a class="comodo escritorio" href="#escritorio" aria-label="Escritório"></a>
+      <a class="comodo reunioes"  href="#reunioes"  aria-label="Sala de reuniões"></a>
+      <a class="comodo copa"      href="#copa"      aria-label="Copa"></a>
+      <a class="comodo banheiro"  href="#banheiro"  aria-label="Banheiro"></a>
+    </section>
+
+    <!-- INFORMAÇÕES: só o painel do cômodo clicado aparece (:target) -->
+    <aside class="info">
+      <article id="intro" class="painel">
+        <h2>Escolha um cômodo</h2>
+        <p>Passe o mouse sobre a planta e clique para conhecer cada ambiente.</p>
+      </article>
+
+      <article id="recepcao" class="painel">
+        <h2>Recepção</h2>
+        <p>Primeiro contato com clientes e visitantes. Aqui acontece o atendimento e a espera.</p>
+        <h3>Móveis</h3><ul><li>Balcão de atendimento</li><li>Sofá</li><li>Cadeira</li></ul>
+        <h3>Portas</h3><ul><li>Porta de entrada</li><li>Porta para o escritório</li></ul>
+      </article>
+
+      <article id="escritorio" class="painel">
+        <h2>Escritório</h2>
+        <p>Espaço de trabalho da equipe, com quatro estações e área de impressão.</p>
+        <h3>Móveis</h3><ul><li>4 mesas de trabalho</li><li>4 cadeiras</li><li>Armário</li></ul>
+        <h3>Eletrodomésticos e eletrônicos</h3><ul><li>4 computadores</li><li>Impressora</li></ul>
+        <h3>Portas</h3><ul><li>3 portas (recepção, reuniões e copa/banheiro)</li></ul>
+      </article>
+
+      <article id="reunioes" class="painel">
+        <h2>Sala de reuniões</h2>
+        <p>Usada para reuniões de equipe e apresentações para clientes. Comporta 6 pessoas.</p>
+        <h3>Móveis</h3><ul><li>Mesa de reunião</li><li>6 cadeiras</li></ul>
+        <h3>Eletrodomésticos e eletrônicos</h3><ul><li>TV</li></ul>
+        <h3>Portas</h3><ul><li>Porta para o escritório</li></ul>
+      </article>
+
+      <article id="copa" class="painel">
+        <h2>Copa</h2>
+        <p>Espaço de pausa para café e refeições rápidas.</p>
+        <h3>Móveis</h3><ul><li>Mesa</li></ul>
+        <h3>Eletrodomésticos e eletrônicos</h3><ul><li>Geladeira</li><li>Micro-ondas</li></ul>
+        <h3>Hidráulica</h3><ul><li>Pia</li></ul>
+        <h3>Portas</h3><ul><li>Porta para o escritório</li></ul>
+      </article>
+
+      <article id="banheiro" class="painel">
+        <h2>Banheiro</h2>
+        <p>Banheiro de uso comum da equipe e dos visitantes.</p>
+        <h3>Hidráulica</h3><ul><li>Vaso sanitário</li><li>Pia</li></ul>
+        <h3>Portas</h3><ul><li>Porta para o escritório</li></ul>
+      </article>
+    </aside>
+  </main>
+</body>
+</html>
